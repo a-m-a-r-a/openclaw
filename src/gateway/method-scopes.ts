@@ -32,6 +32,8 @@ export const CLI_DEFAULT_OPERATOR_SCOPES: OperatorScope[] = [
 const NODE_ROLE_METHODS = new Set([
   "node.invoke.result",
   "node.event",
+  "node.pluginSurface.refresh",
+  "node.canvas.capability.refresh",
   "node.pending.drain",
   "node.pending.pull",
   "node.pending.ack",

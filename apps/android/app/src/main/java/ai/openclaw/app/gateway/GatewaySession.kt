@@ -207,7 +207,7 @@ class GatewaySession(
       )
         ?: refreshPluginSurfaceUrl(
           method = "node.canvas.capability.refresh",
-          params = null,
+          params = buildJsonObject {},
           timeoutMs = timeoutMs,
         )
     if (!refreshed.isNullOrBlank()) {

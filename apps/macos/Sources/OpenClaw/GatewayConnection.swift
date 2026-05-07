@@ -340,7 +340,7 @@ actor GatewayConnection {
         }
         return await self.refreshPluginSurfaceUrl(
             method: "node.canvas.capability.refresh",
-            params: nil,
+            params: [:],
             timeoutMs: timeoutMs)
     }
 

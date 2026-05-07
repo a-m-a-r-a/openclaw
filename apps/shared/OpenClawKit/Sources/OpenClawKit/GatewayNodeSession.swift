@@ -285,7 +285,7 @@ public actor GatewayNodeSession {
         return await self.requestPluginSurfaceRefresh(
             channel: channel,
             method: "node.canvas.capability.refresh",
-            params: nil,
+            params: [:],
             surface: trimmedSurface,
             timeoutSeconds: timeoutSeconds)
     }
